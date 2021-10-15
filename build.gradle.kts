@@ -3,7 +3,7 @@ import org.jagrkt.submitter.submit
 plugins {
   java
   application
-  id("org.jagrkt.submitter").version("0.3.1")
+  id("org.jagrkt.submitter").version("0.4.0")
 }
 
 submit {
