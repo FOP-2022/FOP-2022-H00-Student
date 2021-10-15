@@ -26,7 +26,7 @@ repositories {
 
 dependencies {
   // JUnit only available in "test" source set (./src/test)
-  testImplementation("org.junit.jupiter:junit-jupiter:5.7.2")
+  testImplementation("org.junit.jupiter:junit-jupiter:5.8.1")
 }
 
 java {
