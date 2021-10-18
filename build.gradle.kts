@@ -1,9 +1,9 @@
-import org.jagrkt.submitter.submit
+import org.sourcegrade.submitter.submit
 
 plugins {
   java
   application
-  id("org.jagrkt.submitter").version("0.4.0")
+  id("org.sourcegrade.submitter") version "0.4.0"
 }
 
 submit {
