@@ -3,6 +3,7 @@ import org.sourcegrade.submitter.submit
 plugins {
   java
   application
+  id("com.github.johnrengelman.shadow") version "7.1.0"
   id("org.sourcegrade.submitter") version "0.4.0"
 }
 
@@ -42,6 +43,12 @@ application {
 }
 
 tasks {
+  jar {
+    enabled = false // only enable shadowJar
+  }
+  shadowJar {
+    archiveFileName.set("h00-nicht-abgeben.jar")
+  }
   test {
     useJUnitPlatform()
   }
