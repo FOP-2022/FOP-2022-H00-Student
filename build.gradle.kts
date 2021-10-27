@@ -49,6 +49,9 @@ tasks {
   shadowJar {
     archiveFileName.set("h00-nicht-abgeben.jar")
   }
+  withType<JavaCompile> {
+    options.encoding = "UTF-8"
+  }
   test {
     useJUnitPlatform()
   }
