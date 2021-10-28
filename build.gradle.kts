@@ -43,14 +43,14 @@ application {
 }
 
 tasks {
+  withType<JavaCompile> {
+    options.encoding = "UTF-8"
+  }
   jar {
     enabled = false // only enable shadowJar
   }
   shadowJar {
     archiveFileName.set("h00-nicht-abgeben.jar")
-  }
-  withType<JavaCompile> {
-    options.encoding = "UTF-8"
   }
   test {
     useJUnitPlatform()
